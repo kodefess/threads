@@ -18,7 +18,7 @@ export function BorderTrail({ className, size = 60, transition, delay, onAnimati
   const BASE_TRANSITION = {
     repeat: Number.POSITIVE_INFINITY,
     duration: 5,
-    ease: "linear",
+    ease: (t: number) => t,
   }
 
   return (
