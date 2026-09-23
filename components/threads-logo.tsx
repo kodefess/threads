@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
+import { motion } from "motion/react";
 
 export function ThreadsLogo() {
   return (
@@ -97,7 +97,13 @@ export function ThreadsLogo() {
             transition={{ delay: 0.4, duration: 0.5, type: "spring" }}
           >
             <defs>
-              <linearGradient id="logoGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <linearGradient
+                id="logoGradient"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
                 <stop offset="0%" stopColor="#ffffff" />
                 <stop offset="100%" stopColor="#a0a0a0" />
               </linearGradient>
@@ -116,5 +122,5 @@ export function ThreadsLogo() {
         <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-16 h-4 bg-white/5 rounded-full blur-md" />
       </div>
     </motion.div>
-  )
+  );
 }
